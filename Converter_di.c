@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Converter_di.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbuan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/25 11:53:07 by jbuan             #+#    #+#             */
+/*   Updated: 2021/08/25 12:01:35 by jbuan            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-void    Converter_di(va_list ap, t_list *s_list)
+void	Converter_di(va_list ap, t_list *s_list)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    i = va_arg(ap, int);
-    ft_putnbr(i, s_list);
+	i = 0;
+	i = va_arg(ap, int);
+	ft_putnbr(i, s_list);
 }

@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Converter_C.c                                           :+:      :+:    :+:   */
+/*   Converter_c.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jbuan <jbuan@student.42.fr>                +#+  +:+       +#+        */
+/*   By: jbuan <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/27 18:20:41 by jbuan             #+#    #+#             */
-/*   Updated: 2021/08/05 08:40:35 by jbuan            ###   ########.fr       */
+/*   Created: 2021/08/25 11:52:59 by jbuan             #+#    #+#             */
+/*   Updated: 2021/08/25 11:59:36 by jbuan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void    Converter_c(va_list ap, t_list *s_list)
+void	Converter_c(va_list ap, t_list *s_list)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    i = va_arg(ap, int);
-    ft_putchar(i, s_list);
+	i = 0;
+	i = va_arg(ap, int);
+	ft_putchar(i, s_list);
 }

@@ -1,7 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbuan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/25 11:54:48 by jbuan             #+#    #+#             */
+/*   Updated: 2021/08/25 12:09:02 by jbuan            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "ft_printf.h"
 
-    int		check_base(char *base)
+int	check_base(char *base)
 {
 	int	i;
 	int	z;
@@ -47,7 +58,7 @@ void	ft_putnbr_base(int nbr, char *base, t_list *s_list)
 			size_base++;
 		while (nbr)
 		{
-			nbr_final[i] = nbr % size_base; 
+			nbr_final[i] = nbr % size_base;
 			nbr = nbr / size_base;
 			i++;
 		}

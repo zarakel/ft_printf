@@ -1,11 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Converter_s.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jbuan <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/25 11:53:24 by jbuan             #+#    #+#             */
+/*   Updated: 2021/08/25 12:03:31 by jbuan            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-void   Converter_s(va_list ap, t_list *s_list)
+void	Converter_s(va_list ap, t_list *s_list)
 {
-    char *s;
+	char	*s;
 
-    s = va_arg(ap, char *);
-    if (s == NULL)
-	    s = "(null)";
-    ft_putstr(s, s_list);
+	s = va_arg(ap, char *);
+	if (s == NULL)
+		s = "(null)";
+	ft_putstr(s, s_list);
 }
